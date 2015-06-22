@@ -1,4 +1,5 @@
 # Guess-Number-Game
+By Ricardo McCauley 
 Enter a number to see if your choice is correct.
 Enter a number, and hit the "Guess Number" button.
 If you enter a number, and it is wrong replace current number with anohther number.
