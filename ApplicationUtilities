@@ -1,0 +1,30 @@
+package helpers;
+import javax.swing.JOptionPane;
+public class ApplicationUtilities 
+{
+	public static void displayApplicationInformation(String appName, String description)
+	{
+		String prompt;
+		
+		prompt = "Welcome to the " + appName + " program\n";
+	
+		prompt += "Programmer: Ricardo McCauley\n";
+		prompt += description + "\n";
+		
+		OutputUtilities.showStandardDialog(prompt, appName);
+	}
+	public static void terminateApplication(String programName)
+    {
+        int response;
+        response = OutputUtilities.showOKCancelDiaglog(programName, "Terminate Program");
+        if (response == JOptionPane.OK_OPTION)
+        {
+            System.exit(0);
+        }
+        else
+        {
+        	OutputUtilities.showStandardDialog("Returning to program", "Termimate Program Cancelled!");
+
+        }
+    }
+}
