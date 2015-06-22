@@ -1,0 +1,30 @@
+package guess;
+
+import helpers.ApplicationUtilities;
+
+import javax.swing.JFrame;
+
+
+/***********************************************************************
+Program Name: GuessGame.java
+Programmer's Name: Ricardo McCauley 
+Program Description:Guess the number
+***********************************************************************/
+public class GuessGameMain extends JFrame {
+
+
+	public static void main(String[] args) 
+	{
+		ApplicationUtilities.displayApplicationInformation("Guessing Game", "Guess the number");
+		GuessGame application = new GuessGame();
+		 
+		//set the bounds and size of the window
+		//setBounds(x coordinate, y coordinate, width, height);
+		application.setBounds(900, 450, 325, 250);
+		application.setVisible(true);
+	    application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE );
+	     
+
+	}
+
+}
